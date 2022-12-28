@@ -93,7 +93,7 @@ namespace BinarySearchTree_069
 
         static void Main(string[] args)
         {
-
+            program x = new program();
             Console.WriteLine("Hello World!");
         }
     }
