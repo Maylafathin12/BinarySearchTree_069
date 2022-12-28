@@ -62,6 +62,9 @@ namespace BinarySearchTree_069
             }
         }
         public void inorder(Node ptr)
+        {
+            if (ROOT == null)
+        }
         static void Main(string[] args)
         {
 
