@@ -64,6 +64,15 @@ namespace BinarySearchTree_069
         public void inorder(Node ptr)
         {
             if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if(ptr != null)
+            {
+                Console.WriteLine(ptr.info + "");
+
+            }
         }
         static void Main(string[] args)
         {
