@@ -38,6 +38,30 @@ namespace BinarySearchTree_069
                     currentNode = currentNode.rightchild;
             }
         }
+        public void insert(string element)
+        {
+            Node tmp, parent = null, currentNode = null;
+            search(element, ref parent, ref currentNode);
+            if(currentNode != null)/*check if the node to be inserted already*inserted or not*/
+            {
+                Console.WriteLine("duplicate words not allowed");
+                return;
+            }
+            else
+            {
+                tmp = new Node(element, null, null);
+                if(parent == null)
+                {
+                    ROOT = tmp;
+                }
+                else if (string.Compare(element, parent.info) < 0)
+                {
+                    parent.leftchild = tmp;
+                    parent.rightchild = tmp;
+                }
+            }
+        }
+        public void inorder(Node ptr)
         static void Main(string[] args)
         {
 
