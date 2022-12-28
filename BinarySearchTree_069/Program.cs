@@ -61,7 +61,7 @@ namespace BinarySearchTree_069
                 }
             }
         }
-        public void inorder(Node ptr)
+        public void preorder(Node ptr)
         {
             if (ROOT == null)
             {
@@ -71,9 +71,11 @@ namespace BinarySearchTree_069
             if(ptr != null)
             {
                 Console.WriteLine(ptr.info + "");
-
+                preorder(ptr.leftchild);
+                preorder(ptr.rightchild);
             }
         }
+
         static void Main(string[] args)
         {
 
